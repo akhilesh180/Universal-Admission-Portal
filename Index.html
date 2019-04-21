@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <title>Adv JS</title>
+    <script type="text/javascript" src="/jquery-3.4.0.js"></script>
+</head>
+<body>
+    <h1>Hello Adv Js</h1>
+    <input type="button" id="btnsubmit" value=save>
+    <br>
+    <p class="primay">Statrted leaning Advance Javascript</p>
+    <P id="Geeky">this is first geegy paragraph</P>
+    <div class="primary">this is primary div</div>
+    <div >this is  div is wothout attribute</div>
+    <span class="show">This is from out side div span</span>
+    <h2 id="h2Tag">this is head two.</h2>
+    <div id="divFirst">
+      <h3>This head from div</h3>
+      <P id="Geeky">I from div paragraph</P>
+      <span>This is from div span</span>
+      <span id="show">This is from div span</span>>
+      <span>hello span</span>
+    </div>
+
+    <div id="divattr">this div has did attribute </div>
+    <div id="divshow">
+        <p>This paragraph is inside show div</p>
+      <p class="geek"> 2nd paragraph
+         <span class=myspan> this div has did attribute </span>
+      <em>div</em>
+      <span class="myspan">2nd span</span>  
+      <a href="#">home</a>
+    </p>
+    
+    </div>
+
+    <span class="myspan">out side div </span>
+    <img src="">
+</body>
+
+<script type="text/javascript">
+
+    console.log(document.doctype);
+    console.log(document.links);
+    //document.title="Learning JS";
+
+
+
+
+//var data = document.querySelectorAll(".myspan");
+// document.write(data);
+// for(let i=0; i<data.length; i++){
+//     console.log(data[i]);
+// }
+
+
+
+
+var result = document.querySelectorAll("#divshow > .geek > span.myspan")
+// document.write(result);
+// console.log(result);
+
+
+var data = document.getElementById("divshow");
+// var result = data.querySelectorAll("span.myspan");
+// document.write(result);
+// console.log(result);
+
+ var attribute = document.querySelectorAll("div[id='divattr']");
+// document.write(attribute);
+// console.log(attribute);
+
+// $('#btnsubmit').click(function(){
+//     alert('clicked');
+// })
+
+var result= document.getElementById("Geeky");
+//document.write(result.innerText);
+//console.log(result);
+
+var resultbytab = document.getElementsByTagName("p");
+//document.write(resultbytab.length +"</br>");
+//document.write(resultbytab);
+//console.log(resultbytab);
+
+var query = document.querySelector("#show,#Geeky");
+// document.write(query  +"</br>");
+// console.log(query );
+
+var queryall = document.querySelectorAll("p, h1, #h2Tag, .show");
+// document.write(queryall +"</br>");
+// console.log(queryall);
+
+// for(let i=0;i<queryall.length;i++){
+// console.log(queryall[i].innerHTML);
+// }
+
+
+</script>
+</html>
